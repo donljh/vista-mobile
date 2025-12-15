@@ -9,7 +9,8 @@
     "userInterfaceStyle": "automatic",
     "newArchEnabled": true,
     "ios": {
-      "supportsTablet": true
+      "supportsTablet": true,
+      "bundleIdentifier": "com.donljh.vista"
     },
     "android": {
       "adaptiveIcon": {
@@ -19,7 +20,8 @@
         "monochromeImage": "./assets/images/android-icon-monochrome.png"
       },
       "edgeToEdgeEnabled": true,
-      "predictiveBackGestureEnabled": false
+      "predictiveBackGestureEnabled": false,
+      "package": "com.donljh.vista"
     },
     "web": {
       "output": "static",
@@ -27,6 +29,12 @@
     },
     "plugins": [
       "expo-router",
+      [
+        "@react-native-google-signin/google-signin",
+        {
+          "iosUrlScheme": "com.googleusercontent.apps.933023079924-qvv0918s0veive05g4vlk8j5ba23ukf8"
+        }
+      ],
       [
         "expo-splash-screen",
         {
@@ -43,6 +51,12 @@
     "experiments": {
       "typedRoutes": true,
       "reactCompiler": true
+    },
+    "extra": {
+      "router": {},
+      "eas": {
+        "projectId": "0222db5a-9774-44b8-baa7-11d24f94fa71"
+      }
     }
   }
 }
